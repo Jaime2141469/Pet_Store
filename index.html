@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pet Store</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="icon" href="img/bg.ico">
+</head>
+<body>
+	
+
+     <header class="header">
+     	
+             <div class="menu container">
+             		<a href="#" class="logo">Menu</a>
+             		<input type="checkbox" id="menu">
+             		<label for="menu"><img src="img/menu.jpeg" class="menu_icono" alt="menu"></label>
+             		<nav class="navbar">
+             			<ul>
+             				<li><a href="#">Inicio</a></li>
+             				<li><a href="#lista_2">Servicios</a></li>
+             				<li><a href="#lista">Productos</a></li>
+             				<li><a href="#contacto">Contacto</a></li>
+							<li><a href="login.php">Sign up</a></li>
+             			</ul>
+             		</nav>
+
+             		<div>
+             			<ul>
+             				<li class="sub_menu">
+             					<img src="img/carrito.jpeg" id="img_carrito" alt="carrito">
+             					<div id="carrito">
+             						<table id="lista_carrito">
+             							<thead>
+             								<tr>
+             									<th>Imagen</th>
+             									<th>Nombre</th>
+             									<th>Precio</th>
+             									<th></th>
+             								</tr>
+             							</thead>
+             							<tbody></tbody>
+             						</table>
+             						<a href="#" id="vaciar_carrito" class="btn_2">Vaciar Carrito</a>
+									<a href="login.php" class="btn_2">Pagar</a>
+             					</div>
+             				</li>
+             			</ul>
+             		</div>
+             </div>
+
+             <div class="header_content container">
+             		<h1>Pet Store</h1>
+             		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, 
+             		   et, quam! Necessitatibus, quas a recusandae, repellendus doloribus asperiores quaerat, perferendis, pariatur et alias cumque unde minima adipisci? At, consectetur, minus.
+             		</p>
+             		<div class="botons">
+             			<a href="#" class="btn_1">Mas Imformacion</a>
+             			<a href="#" class="btn_1">Menu</a>
+             		</div>
+             		<div class="socials_1">
+             			<img src="img/facebook-svgrepo-com.svg" alt="">
+             			<img src="img/instagram-svgrepo-com.svg" alt="">
+             			<img src="img/twitter-svgrepo-com.svg" alt="">
+             		</div>
+             		<a href="#lista">
+             			<img class="arrow" src="img/down-arrow-5-svgrepo-com.png" alt="">
+             		</a>
+             </div>
+     </header>
+
+
+     <section class="productos container">
+     	<div class="productos_1">
+     		<h3>Diferentes productos al alcance de su mano</h3>
+     		<hr>
+     		<p>Productos</p>
+     	</div>
+     	<div class="productos_2">
+     		<h2>Diferentes servicios al alcance de su mano</h2>
+     	</div>
+     </section>
+
+     <section class="platillos container" id="lista">
+     	<div class="swiper">
+     		<div class="swiper-wrapper">
+     			<div class="swiper-slide">
+     				<div class="platillo">
+     					<h3>Comida de mascotas</h3>
+     					<p class="precio">$150.000</p>
+     					<img src="img/comida.jpg" alt="">
+     					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptates repellendus pariatur magni deleniti unde odit. Assumenda, eveniet sunt excepturi delectus deserunt architecto, distinctio labore dolorem, illo tenetur, sequi.</p>
+     					<a href="#" class="agregar_carrito btn_2" data-id="1">Agregar al carrito</a>
+     				</div>
+     			</div>
+     			<div class="swiper-slide">
+     				<div class="platillo">
+     					<h3>Comodidad de mascotas</h3>
+     					<p class="precio">$150.000</p>
+     					<img src="img/comodidad.jpg" alt="">
+     					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptates repellendus pariatur magni deleniti unde odit. Assumenda, eveniet sunt excepturi delectus deserunt architecto, distinctio labore dolorem, illo tenetur, sequi.</p>
+     					<a href="#" class="agregar_carrito btn_2" data-id="2">Agregar al carrito</a>
+     				</div>
+     			</div>
+     			<div class="swiper-slide">
+     				<div class="platillo">
+     					<h3>Juguetes de mascotas</h3>
+     					<p class="precio">$150.000</p>
+     					<img src="img/diversion.jpeg" alt="">
+     					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptates repellendus pariatur magni deleniti unde odit. Assumenda, eveniet sunt excepturi delectus deserunt architecto, distinctio labore dolorem, illo tenetur, sequi.</p>
+     					<a href="#" class="agregar_carrito btn_2" data-id="3">Agregar al carrito</a>
+     				</div>
+     			</div>
+     		</div>
+
+     		<div class="swiper-button-next"></div>
+     		<div class="swiper-button-prev"></div>
+     		<div class="swiper-pagination"></div>
+
+     	</div>
+     </section>
+
+     <section class="servicios container">
+     	<div class="productos_2">
+     		<h2>Diferentes servicios al alcance de su mano</h2>
+     	</div>
+     	<div class="productos_1">
+     		<h3>Ofrecemos los siguientes servicios</h3>
+     		<hr>
+     		<p>Servicios</p>
+     	</div>
+     </section>
+
+     <section class="platillos container" id="lista_2">
+     	<div class="swiper mySwiper">
+     		<div class="swiper-wrapper">
+     			<div class="swiper-slide">
+     				<div class="platillo">
+     					<h3 class="c1">Paseo de mascotas</h3>
+     					<p class="precio">$150.000</p>
+     					<img src="img/paseo.png" alt="">
+     					<p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptates repellendus pariatur magni deleniti unde odit. Assumenda, eveniet sunt excepturi delectus deserunt architecto, distinctio labore dolorem, illo tenetur, sequi.</p>
+     					<a href="#" class="agregar_carrito btn_3" data-id="4">Agregar al carrito</a>
+     				</div>
+     			</div>
+     			<div class="swiper-slide">
+     				<div class="platillo">
+     					<h3 class="c1">Baño para mascotas</h3>
+     					<p class="precio">$150.000</p>
+     					<img src="img/baño.png" alt="">
+     					<p class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque voluptates repellendus pariatur magni deleniti unde odit. Assumenda, eveniet sunt excepturi delectus deserunt architecto, distinctio labore dolorem, illo tenetur, sequi.</p>
+     					<a href="#" class="agregar_carrito btn_3" data-id="5">Agregar al carrito</a>
+     				</div>
+     			</div>
+     		</div>
+
+     		<div class="swiper-button-next"></div>
+     		<div class="swiper-button-prev"></div>
+     		<div class="swiper-pagination"></div>
+
+     	</div>
+     </section>
+
+     <section class="servicios container">
+     	<div class="productos_1">
+     		<hr>
+     		<p>Contacto</p>
+     	</div>
+     </section>
+
+     <footer class="footer container">
+
+     	<div class="links">
+
+     		<div class="link">
+     			<h3>Redes</h3>
+     			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quidem sed quisquam eum similique, atque possimus iure eius explicabo obcaecati vel minus quae facere, ipsa, vero laborum accusantium qui quia.</p>
+     			<div class="socials_2">
+     				<img src="img/facebook-svgrepo-com.svg" alt="">
+     				<img src="img/twitter-svgrepo-com.svg" alt="">
+     				<img src="img/instagram-svgrepo-com.svg" alt="">
+     			</div>
+     		</div>
+
+     		<div class="link">
+     			<h3>lorem</h3>
+     			<ul>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     			</ul>
+     		</div>
+
+     		<div class="link">
+     			<h3>lorem</h3> 
+     			<ul>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     				<li><a href="#">lorem</a></li>
+     			</ul>
+     		</div>
+
+     		<div class="link">
+     			<h3>Comentarios | Sugerencias</h3>
+     			<form action="" id="contacto">
+     				<input type="text" placeholder="Nombre" class="inp">
+     				<input type="email" placeholder="Correo" class="inp">
+     				<textarea class="inp"></textarea>
+     				<input type="submit" value="Enviar" class="btn_4">
+     			</form>
+     		</div>
+
+     	</div>
+     </footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>					

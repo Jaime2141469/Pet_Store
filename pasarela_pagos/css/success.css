@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    background-color: green;
+}
+
+.fa-circle-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 8em;
+    margin-top: 15%;
+}
+
+p{
+    color: white;
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: white;
+    cursor: pointer;
+}
+
+.span:hover{
+    color: gray;
+}
